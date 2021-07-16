@@ -1,0 +1,73 @@
+[
+  {
+    "height": 300,
+    "width": 300,
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "meta": {
+      "parse": "grid",
+      "description": "Initial data"
+    },
+    "data": {
+      "values": [
+        {
+          "n": 10
+        }
+      ]
+    },
+    "mark": {
+      "type": "point",
+      "filled": true
+    },
+    "encoding": {
+      "x": {
+        "field": "x",
+        "type": "quantitative",
+        "axis": null
+      },
+      "y": {
+        "field": "y",
+        "type": "quantitative",
+        "axis": null
+      }
+    }
+  },
+  {
+    "height": 300,
+    "width": 300,
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "meta": {
+      "parse": "grid",
+      "description": "Group by Degree",
+      "splitField": "Degree",
+      "axes": false
+    },
+    "data": {
+      "values": [
+        {
+          "Degree": "Masters",
+          "n": 5
+        },
+        {
+          "Degree": "PhD",
+          "n": 5
+        }
+      ]
+    },
+    "mark": {
+      "type": "point",
+      "filled": true
+    },
+    "encoding": {
+      "x": {
+        "field": "x",
+        "type": "quantitative",
+        "axis": null
+      },
+      "y": {
+        "field": "y",
+        "type": "quantitative",
+        "axis": null
+      }
+    }
+  }
+]

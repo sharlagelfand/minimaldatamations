@@ -15,7 +15,7 @@ generate_mapping <- function(data_states, tidy_functions_arg, plot_mapping) {
     n_group_vars <- length(.group_vars)
   } else if (pipeline_has_group_by) { # If not, take the order supplied in the grouping
     .group_vars <- data_states[["group_by"]] %>%
-      group_vars()
+      dplyr::group_vars()
 
     n_group_vars <- length(.group_vars)
   } else if (!pipeline_has_group_by) {

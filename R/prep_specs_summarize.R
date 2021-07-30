@@ -190,7 +190,7 @@ prep_specs_summarize <- function(.data, mapping, toJSON = TRUE, pretty = TRUE, h
       dplyr::summarize(
         !!Y_FIELD := !!Y_FIELD,
         sd = stats::sd(!!Y_RAW_FIELD, na.rm = TRUE),
-        n = n()
+        n = dplyr::n()
       ) %>%
       dplyr::distinct() %>%
       dplyr::mutate(

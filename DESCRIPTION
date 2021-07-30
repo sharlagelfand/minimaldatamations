@@ -1,7 +1,7 @@
-Package: datamations
+Package: minimaldatamations
 Type: Package
 Title: Animated Explanations of Data Analysis Pipelines
-Version: 0.0.0.9009
+Version: 0.0.1
 Authors@R: c(
     person("Xiaoying", "Pu", email = "xpu@umich.edu", role = c("aut")),
     person("Sean", "Kross", email = "smk240@gmail.com", role = c("aut")),
@@ -17,29 +17,20 @@ RoxygenNote: 7.1.1
 Imports: 
     rlang,
     dplyr,
-    ggplot2,
-    gganimate,
-    magick,
-    tibble,
     magrittr,
     purrr,
-    scales,
     stringr,
-    shiny,
     vegawidget,
     forcats,
     glue,
     tidyselect,
     htmlwidgets,
-    reactable,
-    shinyWidgets,
-    shinydashboard,
-    shinyAce,
     jsonlite,
     palmerpenguins,
-    golem,
-    styler,
-    shinyjs
+    htmltools
 Suggests: 
-    testthat (>= 2.1.0)
+    testthat (>= 2.1.0),
+    ggplot2
+Depends:
+    R (>= 2.10)
 Config/testthat/edition: 3

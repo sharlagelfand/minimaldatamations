@@ -50,7 +50,7 @@ devtools::install_github("jhofman/datamations")
 To get started, load datamations and dplyr:
 
 ```{r load-libraries}
-library(datamations)
+library(minimaldatamations)
 library(dplyr)
 ```
 
